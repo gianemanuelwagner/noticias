@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mundo Noticias</title>
+    <link rel="icon" href="logo.ico">
+</head>
+
+<body>
+    <div class="container">
+        <h1><img src="mundo.jpg" alt="Logo de Mundo Noticias"></h1>
+        <header>
+            <nav>
+                <span class="cat" onclick="buscar('Noticias importantes')">Noticias</span>
+                <span class="cat" onclick="buscar('Tecnología')">Tecnología</span>
+                <span class="cat" onclick="buscar('Peliculas')">Peliculas</span>
+                <span class="cat" onclick="buscar('Deportes arg')">Deportes</span>
+                <span class="cat" onclick="buscar('Politica')">Politica</span>
+                <span class="cat" onclick="buscar('Educación importante')">Educación</span>
+            </nav>
+            <div class="busqueda">
+                <input type="text" placeholder="Explora MUNDO NOTICIAS" id="busqueda">
+                <button onclick="buscarTema()">Buscar</button>
+            </div>
+        </header>
+
+
+        <div class="container-noticias">
+
+        </div>
+        <footer>
+            <p>Fuente de noticias: Mundo Noticias &copy; 2023</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
